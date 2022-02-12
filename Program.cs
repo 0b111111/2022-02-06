@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,17 +7,16 @@ namespace _2022_02_06
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.ForegroundColor=ConsoleColor.Green;
-            int suma=0;
-            for(int i=1;i<=100;i=suma-i)
+            Console.BackgroundColor=ConsoleColor.Black;
+            Int64 suma=0;
+            for(Int64 i=1;i<=100;i=suma-i)
             {
-                Console.WriteLine("suma: "+suma+"\ni: "+i);
+                Console.WriteLine(suma);
                 suma+=i;
             }
-            //float myNum=1500000000;//,myNoNum=1500000000;
-            //Console.WriteLine(((decimal)myNum));
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
